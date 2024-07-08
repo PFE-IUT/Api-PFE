@@ -14,8 +14,15 @@ app.use((req, res, next) => {
   });
 
   
-  app.use((req, res) => {
-    res.json({ message: "UPDATE !" }); 
- });
+//   app.use((req, res) => {
+//     res.json({ message: "UPDATE !" }); 
+//  });
+
+ app.get('/',(req,res)=>{
+    res.json("ok");
+ })
+ app.get('/agence',(req,res)=>{
+  res.json("agence");
+})
 
 module.exports = app;
