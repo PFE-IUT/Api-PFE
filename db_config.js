@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
     host:'sql104.infinityfree.com',
     user:'if0_36827403',
     password: '0PBtQMUZIg',
-    database: 'if0_36827403_WebAgence'
+    database: 'if0_36827403_webAgence'
 });
 
 connection.connect(function(err){
