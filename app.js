@@ -1,5 +1,5 @@
 const express = require('express');
-
+var mysql = require('./db_config')
 const app = express();
 
 //////////////////////////////////
