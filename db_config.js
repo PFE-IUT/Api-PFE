@@ -1,10 +1,11 @@
 const mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    host:'',
-    user:'',
-    password: '',
-    database: ''
+    host:'sql104.infinityfree.com',
+    user:'if0_36827403',
+    password: '0PBtQMUZIg',
+    port:'3306',
+    database: 'if0_36827403_webAgence'
 });
 
 connection.connect(function(err){

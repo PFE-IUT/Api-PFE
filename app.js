@@ -19,7 +19,15 @@ app.use((req, res, next) => {
 //  });
 
  app.get('/',(req,res)=>{
-    res.json("ok");
+    var getAgence = "SELECT * FROM agences WHERE id <> 1";
+    mysql.query(getAgence,function(err,resulta){
+      if(err){
+        console.log(err);
+        res.send("fail")
+      }else{
+        res.send(resulta)
+      }
+    })
  })
  app.get('/agence',(req,res)=>{
   res.json("agence");
