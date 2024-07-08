@@ -23,7 +23,7 @@ app.use((req, res, next) => {
     mysql.query(getAgence,function(err,resulta){
       if(err){
         console.log(err);
-        res.send("fail")
+        res.send(err)
       }else{
         res.send(resulta)
       }
